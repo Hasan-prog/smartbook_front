@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<!--
+Template Name: Midone - HTML Admin Dashboard Template
+Author: Left4code
+Website: http://www.left4code.com/
+Contact: muhammadrizki@left4code.com
+Purchase: https://themeforest.net/user/left4code/portfolio
+Renew Support: https://themeforest.net/user/left4code/portfolio
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en" class="light">
+<!-- BEGIN: Head -->
+
+<head>
+    <meta charset="utf-8">
+    <link href="dist/images/Icon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Midone admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+    <meta name="keywords"
+        content="admin template, Midone admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="LEFT4CODE">
+    <title>Smartbook DMS – Shaharlar</title>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="dist/css/app.css" />
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!-- END: CSS Assets-->
+</head>
+<!-- END: Head -->
+
+<body class="app">
+    <!-- BEGIN: Mobile Menu -->
+    <div class="mobile-menu md:hidden flex justify-center">
+        <div class="mobile-menu-bar border-b-0">
+            <a href="index.html" class="mr-auto">
+                <img alt="" width="150" src="dist/images/Logo@1x.png">
+            </a>
+        </div>
+    </div>
+    <!-- END: Mobile Menu -->
+    <!-- BEGIN: Top Bar -->
+    <div class="-mt-10 md:-mt-5 -mx-3 sm:-mx-8 px-3 sm:px-8 py-5 top-bar-menu">
+        <div class="top-bar-boxed flex items-center justify-center">
+            <!-- BEGIN: Logo -->
+            <a href="index.html" class="-intro-x hidden md:block">
+                <img alt="Midone Tailwind HTML Admin Template" width="220" src="dist/images/Logo@1x.png">
+            </a>
+            <!-- END: Logo -->
+        </div>
+    </div>
+    <!-- END: Top Bar -->
+    <!-- BEGIN: Content -->
+    <div class="content">
+        <div class="filters mb-6 py-4">
+            <form class="xl:flex md:mr-auto" id="tabulator-html-filter-form">
+                <div class="md:flex items-center">
+                    <label class="w-full flex-1 xl:w-auto xl:flex-initial mr-2">Oyni tanlang</label>
+                    <select class="input w-full border col-span-4" name="worker_id" id="tabulator-html-filter-field">
+                        <option value="monthly">Yanvar, 2021</option>
+                        <option value="monthly">Dekabr, 2020</option>
+                        <option value="monthly">Noyabr, 2020</option>
+                        <option value="monthly">Oktabr, 2020</option>
+                        <option value="monthly">Sentabr, 2020</option>
+                        <option value="monthly">Avgust, 2020</option>
+                        <option value="monthly">Iyul, 2020</option>
+                        <option value="monthly">Iyun, 2020</option>
+                        <option value="monthly">May, 2020</option>
+                        <option value="monthly">Aprel, 2020</option>
+                        <option value="monthly">Mart, 2020</option>
+                        <option value="monthly">Fevral, 2020</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <!-- BEGIN: Striped Rows -->
+        <div class="box mt-5">
+            <div class="flex flex-col md:flex-row items-center p-5 border-b border-gray-200">
+                <h2 class="font-medium mr-auto">
+                    Yanvar, 2021 yil
+                </h2>
+            </div>
+            <div class="text-gray-700 month-info px-5 py-4">
+                <div class="flex items-center py-2">
+                    <div class="w-2 h-2 bg-theme-12 rounded-full mr-2"></div> 490 Umumiy
+                </div>
+                <div class="flex items-center py-2">
+                    <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                </div>
+                <div class="flex items-center py-2">
+                    <span class="text-gray-500 mr-2">Naqd:</span> 274 561 000 so'm
+                </div>
+                <div class="flex items-center py-2">
+                    <span class="text-gray-500 mr-2">Click:</span> 22 663 000 so'm
+                </div>
+                <div class="flex items-center py-2">
+                    <span class="text-gray-500 mr-2">Umumiy:</span> 297 224 000 so'm
+                </div>
+            </div>
+            <div class="" id="striped-rows-table">
+                <div class="preview" style="display: block; opacity: 1;">
+                    <div class="overflow-x-auto">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="border-b-2 w-16 dark:border-dark-4 whitespace-no-wrap">Sana</th>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Sotish</th>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Naqd</th>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Click</th>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Umumiy</th>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap text-right"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                    <td class="border-b dark:border-dark-5 font-medium">15 Yanvar</td>
+                                    <td class="border-b dark:border-dark-5"><span class="text-gray-500">Bugun...</span>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5"><span class="text-gray-500">Bugun...</span>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5"><span class="text-gray-500">Bugun...</span>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5"><span class="text-gray-500">Bugun...</span>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5 text-center"><span
+                                            class="text-gray-500">Bugun...</span></td>
+                                </tr>
+                                <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                    <td class="border-b dark:border-dark-5 font-medium">14 Yanvar</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1 cursor-pointer"
+                                    onclick="window.location.href = '_daily-list.html';">
+                                    <td class="border-b dark:border-dark-5 font-medium">13 Yanvar</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 23 Yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                    <td class="border-b dark:border-dark-5 font-medium">12 Yanvar</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1 cursor-pointer"
+                                    onclick="window.location.href = '_daily-list.html';">
+                                    <td class="border-b dark:border-dark-5 font-medium">11 Yanvar</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 23 Yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                    <td class="border-b dark:border-dark-5 font-medium">10 Yanvar</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1 cursor-pointer"
+                                    onclick="window.location.href = '_daily-list.html';">
+                                    <td class="border-b dark:border-dark-5 font-medium">9 Yanvar</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 23 Yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                    <td class="border-b dark:border-dark-5 font-medium">8 Yanvar</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1 cursor-pointer"
+                                    onclick="window.location.href = '_daily-list.html';">
+                                    <td class="border-b dark:border-dark-5 font-medium">7 Yanvar</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 23 Yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                    <td class="border-b dark:border-dark-5 font-medium">6 Yanvar</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1 cursor-pointer"
+                                    onclick="window.location.href = '_daily-list.html';">
+                                    <td class="border-b dark:border-dark-5 font-medium">5 Yanvar</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 23 Yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                    <td class="border-b dark:border-dark-5 font-medium">4 Yanvar</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1 cursor-pointer"
+                                    onclick="window.location.href = '_daily-list.html';">
+                                    <td class="border-b dark:border-dark-5 font-medium">3 Yanvar</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 23 Yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 1 Qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                    <td class="border-b dark:border-dark-5 font-medium">2 Yanvar</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1 cursor-pointer"
+                                    onclick="window.location.href = '_daily-list.html';">
+                                    <td class="border-b dark:border-dark-5 font-medium">1 Yanvar</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 23 Yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 1 Qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Striped Rows -->
+                <!-- BEGIN: Striped Rows -->
+                <div class="box mt-5">
+                    <div class="flex flex-col md:flex-row items-center p-5 border-b border-gray-200">
+                        <h2 class="font-medium mr-auto">
+                            Dekabr, 2020 yil
+                        </h2>
+                    </div>
+                    <div class="text-gray-700 month-info px-5 py-4">
+                        <div class="flex items-center py-2">
+                            <div class="w-2 h-2 bg-theme-12 rounded-full mr-2"></div> 490 Umumiy
+                        </div>
+                        <div class="flex items-center py-2">
+                            <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                        </div>
+                        <div class="flex items-center py-2">
+                            <span class="text-gray-500 mr-2">Naqd:</span> 274 561 000 so'm
+                        </div>
+                        <div class="flex items-center py-2">
+                            <span class="text-gray-500 mr-2">Click:</span> 22 663 000 so'm
+                        </div>
+                        <div class="flex items-center py-2">
+                            <span class="text-gray-500 mr-2">Umumiy:</span> 297 224 000 so'm
+                        </div>
+                    </div>
+                    <div class="" id="striped-rows-table">
+                        <div class="preview" style="display: block; opacity: 1;">
+                            <div class="overflow-x-auto">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-b-2 w-16 dark:border-dark-4 whitespace-no-wrap">Sana</th>
+                                            <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Sotish</th>
+                                            <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Naqd</th>
+                                            <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Click</th>
+                                            <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Umumiy</th>
+                                            <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap text-right"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">31 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">30 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">29 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">28 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">27 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">26 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">25 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">24 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">23 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">22 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">21 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">20 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">19 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">18 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">17 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">16 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">15 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">14 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100 dark:bg-dark-1 cursor-pointer"
+                                            onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">13 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 23 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">12 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100 dark:bg-dark-1 cursor-pointer"
+                                            onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">11 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 23 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">10 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100 dark:bg-dark-1 cursor-pointer"
+                                            onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">9 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 23 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">8 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100 dark:bg-dark-1 cursor-pointer"
+                                            onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">7 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 23 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">6 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100 dark:bg-dark-1 cursor-pointer"
+                                            onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">5 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 23 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">4 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100 dark:bg-dark-1 cursor-pointer"
+                                            onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">3 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 23 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 1 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="cursor-pointer" onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">2 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-gray-100 dark:bg-dark-1 cursor-pointer"
+                                            onclick="window.location.href = '_daily-list.html';">
+                                            <td class="border-b dark:border-dark-5 font-medium">1 Yanvar</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex text-gray-700">
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 23 Yetkazildi
+                                                    </div>
+                                                    <div class="mr-6 flex items-center">
+                                                        <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 1 Qaytargan
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="border-b dark:border-dark-5">4 093 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">599 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">4 692 000 so'm</td>
+                                            <td class="border-b dark:border-dark-5">
+                                                <div class="flex items-center justify-center">
+                                                    <a class="flex items-center mr-5" href="_daily-list.html"> <i
+                                                            class="w-4 h-4 mr-2" data-feather="list"></i> Xaridlar </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Striped Rows -->
+    </div>
+    <!-- END: Content -->
+    <!-- BEGIN: JS Assets-->
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=[" your-google-map-api"]&libraries=places"></script>
+    <script src="dist/js/app.js"></script>
+    <!-- END: JS Assets-->
+</body>
+
+</html>

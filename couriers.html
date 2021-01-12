@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<!--
+Template Name: Midone - HTML Admin Dashboard Template
+Author: Left4code
+Website: http://www.left4code.com/
+Contact: muhammadrizki@left4code.com
+Purchase: https://themeforest.net/user/left4code/portfolio
+Renew Support: https://themeforest.net/user/left4code/portfolio
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en" class="light">
+<!-- BEGIN: Head -->
+
+<head>
+    <meta charset="utf-8">
+    <link href="dist/images/Icon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Midone admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+    <meta name="keywords"
+        content="admin template, Midone admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="LEFT4CODE">
+    <title>Smartbook DMS – Kuryerlar</title>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="dist/css/app.css" />
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!-- END: CSS Assets-->
+</head>
+<!-- END: Head -->
+
+<body class="app">
+    <!-- BEGIN: Mobile Menu -->
+    <div class="mobile-menu md:hidden">
+        <div class="mobile-menu-bar">
+            <a href="index.html" class="mr-auto">
+                <img alt="Midone Tailwind HTML Admin Template" width="150" src="dist/images/Logo@1x.png">
+            </a>
+            <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2"
+                    class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+        </div>
+        <ul class="border-t border-theme-24 py-5 hidden">
+            <li>
+                <a href="index.html" class="menu menu--active">
+                    <div class="menu__icon"> <i data-feather="map"></i> </div>
+                    <div class="menu__title"> Shaharlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="couriers.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="users"></i> </div>
+                    <div class="menu__title"> Kuryerlar
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="products.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="list"></i> </div>
+                    <div class="menu__title"> Mahsulotlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="clients.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="user-check"></i> </div>
+                    <div class="menu__title"> Mijozlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="history.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="package"></i> </div>
+                    <div class="menu__title"> Berilgan mahsulotlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="add-order.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="plus"></i> </div>
+                    <div class="menu__title"> Yangi buyurtma </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- END: Mobile Menu -->
+    <!-- BEGIN: Top Bar -->
+    <div class="border-b border-theme-24 -mt-10 md:-mt-5 -mx-3 sm:-mx-8 px-3 sm:px-8 pt-3 md:pt-0 mb-10">
+        <div class="top-bar-boxed flex items-center">
+            <!-- BEGIN: Logo -->
+            <a href="index.html" class="-intro-x hidden md:block">
+                <img alt="Midone Tailwind HTML Admin Template" width="150" src="dist/images/Logo@1x.png">
+            </a>
+            <!-- END: Logo -->
+            <!-- BEGIN: Breadcrumb -->
+            <div class="-intro-x breadcrumb breadcrumb--light mr-auto"> <a href="" class="">Smartbook</a> <i
+                    data-feather="chevron-right" class="breadcrumb__icon"></i> <a href=""
+                    class="breadcrumb--active">Kuryerlar</a> </div>
+            <!-- END: Breadcrumb -->
+            <!-- BEGIN: Account Menu -->
+            <div class="intro-x dropdown w-8 h-8">
+                <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in scale-110">
+                    <img alt="Midone Tailwind HTML Admin Template" src="dist/images/profile-13.jpg">
+                </div>
+                <div class="dropdown-box w-56">
+                    <div class="dropdown-box__content box bg-theme-38 dark:bg-dark-6 text-white">
+                        <div class="p-4 border-b border-theme-40 dark:border-dark-3">
+                            <div class="font-medium">Xasan Shadiyarov</div>
+                            <div class="text-xs text-theme-41 dark:text-gray-600">Meneger</div>
+                        </div>
+                        <div class="p-2">
+                            <a href="profile.html"
+                                class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md">
+                                <i data-feather="user" class="w-4 h-4 mr-2"></i> Profil </a>
+                            <a href="reset-password.html"
+                                class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md">
+                                <i data-feather="lock" class="w-4 h-4 mr-2"></i> Parolni tiklash </a>
+                            <a href="help.html"
+                                class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md">
+                                <i data-feather="help-circle" class="w-4 h-4 mr-2"></i> Maslahatlar </a>
+                        </div>
+                        <div class="p-2 border-t border-theme-40 dark:border-dark-3">
+                            <a href="login-light-login.html"
+                                class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md">
+                                <i data-feather="log-out" class="w-4 h-4 mr-2"></i> Chiqish </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Account Menu -->
+        </div>
+    </div>
+    <!-- END: Top Bar -->
+    <!-- BEGIN: Top Menu -->
+    <nav class="top-nav">
+        <ul>
+            <li>
+                <a href="index.html" class="top-menu">
+                    <div class="top-menu__icon"> <i data-feather="map"></i> </div>
+                    <div class="top-menu__title"> Shaharlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="couriers.html" class="top-menu top-menu--active">
+                    <div class="top-menu__icon"> <i data-feather="users"></i> </div>
+                    <div class="top-menu__title"> Kuryerlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="products.html" class="top-menu">
+                    <div class="top-menu__icon"> <i data-feather="list"></i> </div>
+                    <div class="top-menu__title"> Mahsulotlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="clients.html" class="top-menu">
+                    <div class="top-menu__icon"> <i data-feather="user-check"></i> </div>
+                    <div class="top-menu__title"> Mijozlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="history.html" class="top-menu">
+                    <div class="top-menu__icon"> <i data-feather="package"></i> </div>
+                    <div class="top-menu__title"> Berilgan mahsulotlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="add-order.html" class="top-menu">
+                    <div class="top-menu__icon"> <i data-feather="plus"></i> </div>
+                    <div class="top-menu__title"> Yangi buyurtma </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- END: Top Menu -->
+    <!-- BEGIN: Content -->
+    <div class="content">
+        <!-- BEGIN: Striped Rows -->
+        <div class="intro-y box mt-5">
+            <div class="flex flex-col sm:flex-row items-center p-5 border-b border-gray-200">
+                <h2 class="font-medium text-base mr-auto">
+                    Kuryerlar
+                </h2>
+                <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
+                    <a href="add-courier.html" class="button ml-2 mb-2 flex items-center justify-center bg-theme-1 text-white"> <i
+                            data-feather="user-plus" class="w-4 h-4 mr-2"></i> Yangi kuryer </a>
+                </div>
+            </div>
+            <div class="p-5" id="striped-rows-table">
+                <div class="filters mb-6">
+                    <form class="xl:flex sm:mr-auto" id="tabulator-html-filter-form">
+                        <div class="sm:flex items-center sm:mr-4 mt-2 xl:mt-0">
+                            <label class="w-12 flex-none xl:w-auto xl:flex-initial mr-2">Qidirmoq</label>
+                            <input type="text" class="input w-full sm:w-40 xxl:w-full mt-2 sm:mt-0 border"
+                                id="tabulator-html-filter-value" placeholder="Kuryer...">
+                        </div>
+                    </form>
+                </div>
+                <div class="preview" style="display: block; opacity: 1;">
+                    <div class="overflow-x-auto">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Photo</th>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Ism va Telefon</th>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Shahar</th>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Bugun sotilgan</th>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Oyli sotilgan</th>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap text-right"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-gray-100 dark:bg-dark-1">
+                                    <td class="border-b dark:border-dark-5" width="100">
+                                        <div class="image-fit profile-image-row">
+                                            <img alt="" class="rounded-full" src="dist/images/man.jpg">
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <span href="" class="font-medium whitespace-no-wrap">Ulugbek Sobirov</span>
+                                        <a href="tel: +998 (97) 444-67-17">
+                                            <div class="text-gray-600 text-xs whitespace-no-wrap">+998 (97) 444-67-17</div>
+                                        </a>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 24 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-12 rounded-full mr-2"></div> 28 buyurtma
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 500 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 1 qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-courier.html"> <i class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2" data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-b dark:border-dark-5" width="100">
+                                        <div class="image-fit profile-image-row">
+                                            <img alt="" class="rounded-full" src="dist/images/man 2.jpg">
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <span href="" class="font-medium whitespace-no-wrap">Davlatbek Shadiyar</span>
+                                        <a href="tel: +998 (97) 444-67-17">
+                                            <div class="text-gray-600 text-xs whitespace-no-wrap">+998 (97) 444-67-17</div>
+                                        </a>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">Namangan</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 18 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-12 rounded-full mr-2"></div> 24 buyurtma
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 480 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-courier.html"> <i class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2" data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1">
+                                    <td class="border-b dark:border-dark-5" width="100">
+                                        <div class="image-fit profile-image-row">
+                                            <img alt="" class="rounded-full" src="dist/images/man 3.jpg">
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <span href="" class="font-medium whitespace-no-wrap">Farxod Nigmatov</span>
+                                        <a href="tel: +998 (97) 444-67-17">
+                                            <div class="text-gray-600 text-xs whitespace-no-wrap">+998 (97) 444-67-17</div>
+                                        </a>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">Samarqand</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-12 rounded-full mr-2"></div> 28 buyurtma
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 610 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href=""><i class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2" data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1">
+                                    <td class="border-b dark:border-dark-5" width="100">
+                                        <div class="image-fit profile-image-row">
+                                            <img alt="" class="rounded-full" src="dist/images/man.jpg">
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <span href="" class="font-medium whitespace-no-wrap">Ulugbek Sobirov</span>
+                                        <a href="tel: +998 (97) 444-67-17">
+                                            <div class="text-gray-600 text-xs whitespace-no-wrap">+998 (97) 444-67-17</div>
+                                        </a>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 24 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-12 rounded-full mr-2"></div> 28 buyurtma
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 500 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 1 qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-courier.html"> <i class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2" data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-b dark:border-dark-5" width="100">
+                                        <div class="image-fit profile-image-row">
+                                            <img alt="" class="rounded-full" src="dist/images/man 2.jpg">
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <span href="" class="font-medium whitespace-no-wrap">Davlatbek Shadiyar</span>
+                                        <a href="tel: +998 (97) 444-67-17">
+                                            <div class="text-gray-600 text-xs whitespace-no-wrap">+998 (97) 444-67-17</div>
+                                        </a>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">Namangan</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 18 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-12 rounded-full mr-2"></div> 24 buyurtma
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 480 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-courier.html"> <i class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2" data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1">
+                                    <td class="border-b dark:border-dark-5" width="100">
+                                        <div class="image-fit profile-image-row">
+                                            <img alt="" class="rounded-full" src="dist/images/man 3.jpg">
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <span href="" class="font-medium whitespace-no-wrap">Farxod Nigmatov</span>
+                                        <a href="tel: +998 (97) 444-67-17">
+                                            <div class="text-gray-600 text-xs whitespace-no-wrap">+998 (97) 444-67-17</div>
+                                        </a>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">Samarqand</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-12 rounded-full mr-2"></div> 28 buyurtma
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 610 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href=""><i class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2" data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1">
+                                    <td class="border-b dark:border-dark-5" width="100">
+                                        <div class="image-fit profile-image-row">
+                                            <img alt="" class="rounded-full" src="dist/images/man.jpg">
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <span href="" class="font-medium whitespace-no-wrap">Ulugbek Sobirov</span>
+                                        <a href="tel: +998 (97) 444-67-17">
+                                            <div class="text-gray-600 text-xs whitespace-no-wrap">+998 (97) 444-67-17</div>
+                                        </a>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 24 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-12 rounded-full mr-2"></div> 28 buyurtma
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 500 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 1 qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-courier.html"> <i class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2" data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-b dark:border-dark-5" width="100">
+                                        <div class="image-fit profile-image-row">
+                                            <img alt="" class="rounded-full" src="dist/images/man 2.jpg">
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <span href="" class="font-medium whitespace-no-wrap">Davlatbek Shadiyar</span>
+                                        <a href="tel: +998 (97) 444-67-17">
+                                            <div class="text-gray-600 text-xs whitespace-no-wrap">+998 (97) 444-67-17</div>
+                                        </a>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">Namangan</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 18 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-12 rounded-full mr-2"></div> 24 buyurtma
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 480 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-courier.html"> <i class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2" data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1">
+                                    <td class="border-b dark:border-dark-5" width="100">
+                                        <div class="image-fit profile-image-row">
+                                            <img alt="" class="rounded-full" src="dist/images/man 3.jpg">
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <span href="" class="font-medium whitespace-no-wrap">Farxod Nigmatov</span>
+                                        <a href="tel: +998 (97) 444-67-17">
+                                            <div class="text-gray-600 text-xs whitespace-no-wrap">+998 (97) 444-67-17</div>
+                                        </a>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">Samarqand</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-12 rounded-full mr-2"></div> 28 buyurtma
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 610 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href=""><i class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2" data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1">
+                                    <td class="border-b dark:border-dark-5" width="100">
+                                        <div class="image-fit profile-image-row">
+                                            <img alt="" class="rounded-full" src="dist/images/man.jpg">
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <span href="" class="font-medium whitespace-no-wrap">Ulugbek Sobirov</span>
+                                        <a href="tel: +998 (97) 444-67-17">
+                                            <div class="text-gray-600 text-xs whitespace-no-wrap">+998 (97) 444-67-17</div>
+                                        </a>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 24 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-12 rounded-full mr-2"></div> 28 buyurtma
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 500 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 1 qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-courier.html"> <i class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2" data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-b dark:border-dark-5" width="100">
+                                        <div class="image-fit profile-image-row">
+                                            <img alt="" class="rounded-full" src="dist/images/man 2.jpg">
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <span href="" class="font-medium whitespace-no-wrap">Davlatbek Shadiyar</span>
+                                        <a href="tel: +998 (97) 444-67-17">
+                                            <div class="text-gray-600 text-xs whitespace-no-wrap">+998 (97) 444-67-17</div>
+                                        </a>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">Namangan</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 18 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-12 rounded-full mr-2"></div> 24 buyurtma
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 480 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-courier.html"> <i class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2" data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1">
+                                    <td class="border-b dark:border-dark-5" width="100">
+                                        <div class="image-fit profile-image-row">
+                                            <img alt="" class="rounded-full" src="dist/images/man 3.jpg">
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <span href="" class="font-medium whitespace-no-wrap">Farxod Nigmatov</span>
+                                        <a href="tel: +998 (97) 444-67-17">
+                                            <div class="text-gray-600 text-xs whitespace-no-wrap">+998 (97) 444-67-17</div>
+                                        </a>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">Samarqand</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 20 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-12 rounded-full mr-2"></div> 28 buyurtma
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="flex text-gray-700">
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-9 rounded-full mr-2"></div> 610 yetkazildi
+                                            </div>
+                                            <div class="mr-6 flex items-center">
+                                                <div class="w-2 h-2 bg-theme-6 rounded-full mr-2"></div> 0 qaytargan
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href=""><i class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2" data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Striped Rows -->
+    </div>
+    <!-- END: Content -->
+    <!-- BEGIN: JS Assets-->
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=[" your-google-map-api"]&libraries=places"></script>
+    <script src="dist/js/app.js"></script>
+    <!-- END: JS Assets-->
+</body>
+
+</html>

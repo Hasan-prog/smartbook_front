@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<!--
+Template Name: Midone - HTML Admin Dashboard Template
+Author: Left4code
+Website: http://www.left4code.com/
+Contact: muhammadrizki@left4code.com
+Purchase: https://themeforest.net/user/left4code/portfolio
+Renew Support: https://themeforest.net/user/left4code/portfolio
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en" class="light">
+<!-- BEGIN: Head -->
+
+<head>
+    <meta charset="utf-8">
+    <link href="dist/images/Icon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Midone admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+    <meta name="keywords"
+        content="admin template, Midone admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="LEFT4CODE">
+    <title>Smartbook DMS – Berilgan Mahsulotlar</title>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="dist/css/app.css" />
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!-- END: CSS Assets-->
+</head>
+<!-- END: Head -->
+
+<body class="app">
+    <!-- BEGIN: Mobile Menu -->
+    <div class="mobile-menu md:hidden">
+        <div class="mobile-menu-bar">
+            <a href="index.html" class="mr-auto">
+                <img alt="Midone Tailwind HTML Admin Template" width="150" src="dist/images/Logo@1x.png">
+            </a>
+            <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2"
+                    class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+        </div>
+        <ul class="border-t border-theme-24 py-5 hidden">
+            <li>
+                <a href="index.html" class="menu menu--active">
+                    <div class="menu__icon"> <i data-feather="map"></i> </div>
+                    <div class="menu__title"> Shaharlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="couriers.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="users"></i> </div>
+                    <div class="menu__title"> Kuryerlar
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="products.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="list"></i> </div>
+                    <div class="menu__title"> Mahsulotlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="clients.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="user-check"></i> </div>
+                    <div class="menu__title"> Mijozlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="history.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="package"></i> </div>
+                    <div class="menu__title"> Berilgan mahsulotlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="add-order.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="plus"></i> </div>
+                    <div class="menu__title"> Yangi buyurtma </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- END: Mobile Menu -->
+    <!-- BEGIN: Top Bar -->
+    <div class="border-b border-theme-24 -mt-10 md:-mt-5 -mx-3 sm:-mx-8 px-3 sm:px-8 pt-3 md:pt-0 mb-10">
+        <div class="top-bar-boxed flex items-center">
+            <!-- BEGIN: Logo -->
+            <a href="index.html" class="-intro-x hidden md:block">
+                <img alt="Midone Tailwind HTML Admin Template" width="150" src="dist/images/Logo@1x.png">
+            </a>
+            <!-- END: Logo -->
+            <!-- BEGIN: Breadcrumb -->
+            <div class="-intro-x breadcrumb breadcrumb--light mr-auto"> <a href="" class="">Smartbook</a> <i
+                    data-feather="chevron-right" class="breadcrumb__icon"></i> <a href=""
+                    class="breadcrumb--active">Berilgan Mahsulotlar</a> </div>
+            <!-- END: Breadcrumb -->
+            <!-- BEGIN: Account Menu -->
+            <div class="intro-x dropdown w-8 h-8">
+                <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in scale-110">
+                    <img alt="Midone Tailwind HTML Admin Template" src="dist/images/profile-13.jpg">
+                </div>
+                <div class="dropdown-box w-56">
+                    <div class="dropdown-box__content box bg-theme-38 dark:bg-dark-6 text-white">
+                        <div class="p-4 border-b border-theme-40 dark:border-dark-3">
+                            <div class="font-medium">Xasan Shadiyarov</div>
+                            <div class="text-xs text-theme-41 dark:text-gray-600">Meneger</div>
+                        </div>
+                        <div class="p-2">
+                            <a href="profile.html"
+                                class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md">
+                                <i data-feather="user" class="w-4 h-4 mr-2"></i> Profil </a>
+                            <a href="reset-password.html"
+                                class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md">
+                                <i data-feather="lock" class="w-4 h-4 mr-2"></i> Parolni tiklash </a>
+                            <a href="help.html"
+                                class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md">
+                                <i data-feather="help-circle" class="w-4 h-4 mr-2"></i> Maslahatlar </a>
+                        </div>
+                        <div class="p-2 border-t border-theme-40 dark:border-dark-3">
+                            <a href="login-light-login.html"
+                                class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md">
+                                <i data-feather="log-out" class="w-4 h-4 mr-2"></i> Chiqish </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Account Menu -->
+        </div>
+    </div>
+    <!-- END: Top Bar -->
+    <!-- BEGIN: Top Menu -->
+    <nav class="top-nav">
+        <ul>
+            <li>
+                <a href="index.html" class="top-menu">
+                    <div class="top-menu__icon"> <i data-feather="map"></i> </div>
+                    <div class="top-menu__title"> Shaharlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="couriers.html" class="top-menu">
+                    <div class="top-menu__icon"> <i data-feather="users"></i> </div>
+                    <div class="top-menu__title"> Kuryerlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="products.html" class="top-menu">
+                    <div class="top-menu__icon"> <i data-feather="list"></i> </div>
+                    <div class="top-menu__title"> Mahsulotlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="clients.html" class="top-menu">
+                    <div class="top-menu__icon"> <i data-feather="user-check"></i> </div>
+                    <div class="top-menu__title"> Mijozlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="history.html" class="top-menu top-menu--active">
+                    <div class="top-menu__icon"> <i data-feather="package"></i> </div>
+                    <div class="top-menu__title"> Berilgan mahsulotlar </div>
+                </a>
+            </li>
+            <li>
+                <a href="add-order.html" class="top-menu">
+                    <div class="top-menu__icon"> <i data-feather="plus"></i> </div>
+                    <div class="top-menu__title"> Yangi buyurtma </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- END: Top Menu -->
+    <!-- BEGIN: Content -->
+    <div class="content">
+        <!-- BEGIN: Striped Rows -->
+        <div class="intro-y box mt-5">
+            <div class="flex flex-col sm:flex-row items-center p-5 border-b border-gray-200">
+                <h2 class="font-medium text-base mr-auto">
+                    Berilgan Mahsulotlar
+                </h2>
+                <div class="w-full sm:w-auto flex items-center sm:ml-auto mt-3 sm:mt-0">
+                    <button
+                        class="button ml-2 mb-2 border text-gray-700 dark:bg-dark-5 dark:text-gray-300 flex items-center justify-center"><i
+                            data-feather="file-text" class="w-4 h-4 mr-2"></i> Excel export </button>
+                    <div class="text-center"> <a href="javascript:;" data-toggle="modal"
+                            data-target="#header-footer-modal-preview"
+                            class="button ml-2 mb-2 flex items-center justify-center bg-theme-1 text-white"><i
+                                data-feather="plus" class="w-4 h-4 mr-2"></i> Yangi o'tkazish</a> </div>
+                    <div class="modal" id="header-footer-modal-preview">
+                        <div class="modal__content relative">
+                            <div
+                                class="flex items-center px-5 py-5 sm:py-3 border-b border-gray-200 dark:border-dark-5">
+                                <h2 class="font-medium text-base mr-auto">Yangi o'tkazish</h2>
+                                <a data-dismiss="modal" href="javascript:;" class="absolute right-0 top-0 mt-3 mr-3"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x w-6 h-6 text-gray-500"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> </a>
+                            </div>
+                            <form action="">
+                                <div class="p-5">
+                                    <div class="intro-y col-span-12 sm:col-span-6 product-select mb-4">
+                                        <div class="mb-2">Mahsulotlar</div>
+                                        <div class="flex first-product-select">
+                                            <select class="tail-select w-full flex-8">
+                                                <option value="1">Arab tili · kitob</option>
+                                                <option value="2">Rus tili · kitob</option>
+                                                <option value="3">Xitoy tili · kitob</option>
+                                                <option value="4">Arab tili · disk</option>
+                                                <option value="5">Arab tili · to'liq to'plam</option>
+                                            </select>
+                                            <input type="number" value="1" class="input w-full border qty" placeholder="Miqdori...">
+                                        </div>
+                                        <button class="button bg-gray-200 text-gray-600 one-more flex items-center justify-center"><i class="w-5 h-5 mr-2" data-feather="plus"></i> Mahsulot</button>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label>Kuryer</label>
+                                            <div class="mt-2"> 
+                                                <select data-search="true" class="tail-select w-full">
+                                                    <option value="0">Kuryerni tanlang...</option>
+                                                    <option value="2">Ulugbek Sobirov</option>
+                                                    <option value="3">Davlatbek Shadiyar</option>
+                                                    <option value="4">Farxod Nigmatov</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-5 py-3 text-right border-t border-gray-200 dark:border-dark-5">
+                                    <button type="button" class="button bg-theme-1 text-white">Qo'shish</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="p-5" id="striped-rows-table">
+                <div class="filters mb-6">
+                    <form class="xl:flex sm:mr-auto" id="tabulator-html-filter-form">
+                        <div class="sm:flex items-center sm:mr-4">
+                            <label class="w-12 flex-none xl:w-auto xl:flex-initial mr-2">Shahar</label>
+                            <select class="input w-full border col-span-4" name="worker_id"
+                                id="tabulator-html-filter-field">
+                                <option value="all" selected="">Hamma</option>
+                                <option value="Toshkent">Toshkent</option>
+                                <option value="Namangan">Namangan</option>
+                                <option value="Samarqand">Samarqand</option>
+                                <option value="Andijon">Andijon</option>
+                                <option value="Nukus">Nukus</option>
+                                <option value="Fargʻona">Fargʻona</option>
+                                <option value="Buxoro">Buxoro</option>
+                                <option value="Qarshi">Qarshi</option>
+                                <option value="Qoʻqon">Qoʻqon</option>
+                                <option value="Margʻilon">Margʻilon</option>
+                                <option value="Angren">Angren</option>
+                                <option value="Termiz">Termiz</option>
+                                <option value="overall">Jizzax</option>
+                                <option value="overall">Chirchiq</option>
+                                <option value="overall">Navoiy</option>
+                                <option value="overall">Urganch</option>
+                                <option value="overall">Shahrisabz</option>
+                                <option value="overall">Guliston</option>
+                                <option value="overall">Xiva</option>
+                                <option value="overall">Kattaqoʻrgʻon</option>
+                            </select>
+                        </div>
+                        <div class="sm:flex items-center sm:mr-4">
+                            <label class="w-12 flex-none xl:w-auto xl:flex-initial mr-2">Kuryer</label>
+                            <select class="input w-full border col-span-4" name="worker_id"
+                                id="tabulator-html-filter-field">
+                                <option value="all" selected="">Hamma</option>
+                                <option value="Toshkent">Ulugbek Sobirov</option>
+                                <option value="Namangan">Davlatbek Shadiyar</option>
+                                <option value="Namangan">Farxod Nigmatov</option>
+                                <option value="Toshkent">Ulugbek Sobirov</option>
+                                <option value="Namangan">Davlatbek Shadiyar</option>
+                                <option value="Namangan">Farxod Nigmatov</option>
+                                <option value="Toshkent">Ulugbek Sobirov</option>
+                                <option value="Namangan">Davlatbek Shadiyar</option>
+                                <option value="Namangan">Farxod Nigmatov</option>
+                                <option value="Toshkent">Ulugbek Sobirov</option>
+                                <option value="Namangan">Davlatbek Shadiyar</option>
+                                <option value="Namangan">Farxod Nigmatov</option>
+                            </select>
+                        </div>
+                        <div class="sm:flex items-center sm:mr-4 mt-2 xl:mt-0">
+                            <label class="w-12 flex-none xl:w-auto xl:flex-initial mr-2">Qidirmoq</label>
+                            <input type="text" class="input w-full sm:w-40 xxl:w-full mt-2 sm:mt-0 border"
+                                id="tabulator-html-filter-value" placeholder="Mahsolotlar...">
+                        </div>
+                    </form>
+                </div>
+                <div class="preview" style="display: block; opacity: 1;">
+                    <div class="overflow-x-auto">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">ID</th>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Mahsulotlar</th>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Qachon berilgan</th>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Kuryer</th>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap">Qaysi shaharga</th>
+                                    <th class="border-b-2 dark:border-dark-4 whitespace-no-wrap text-right"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-gray-100 dark:bg-dark-1">
+                                    <td class="border-b dark:border-dark-5">1</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Arab tili ·
+                                            50 kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Rus tili · 40
+                                            kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Xitoy tili ·
+                                            30 kitob</div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">12 Dekabr, 2020 – 12:45</td>
+                                    <td class="border-b dark:border-dark-5"><a href="edit-courier.html">Ulugbek
+                                            Sobirov</a></td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-history.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2"
+                                                    data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-b dark:border-dark-5">1</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Arab tili ·
+                                            50 kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Rus tili · 40
+                                            kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Xitoy tili ·
+                                            30 kitob</div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">12 Dekabr, 2020 – 12:45</td>
+                                    <td class="border-b dark:border-dark-5"><a href="edit-courier.html">Ulugbek
+                                            Sobirov</a></td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-history.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2"
+                                                    data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1">
+                                    <td class="border-b dark:border-dark-5">1</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Arab tili ·
+                                            50 kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Rus tili · 40
+                                            kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Xitoy tili ·
+                                            30 kitob</div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">12 Dekabr, 2020 – 12:45</td>
+                                    <td class="border-b dark:border-dark-5"><a href="edit-courier.html">Ulugbek
+                                            Sobirov</a></td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-history.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2"
+                                                    data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-b dark:border-dark-5">1</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Arab tili ·
+                                            50 kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Rus tili · 40
+                                            kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Xitoy tili ·
+                                            30 kitob</div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">12 Dekabr, 2020 – 12:45</td>
+                                    <td class="border-b dark:border-dark-5"><a href="edit-courier.html">Ulugbek
+                                            Sobirov</a></td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-history.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2"
+                                                    data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1">
+                                    <td class="border-b dark:border-dark-5">1</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Arab tili ·
+                                            50 kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Rus tili · 40
+                                            kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Xitoy tili ·
+                                            30 kitob</div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">12 Dekabr, 2020 – 12:45</td>
+                                    <td class="border-b dark:border-dark-5"><a href="edit-courier.html">Ulugbek
+                                            Sobirov</a></td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-history.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2"
+                                                    data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-b dark:border-dark-5">1</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Arab tili ·
+                                            50 kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Rus tili · 40
+                                            kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Xitoy tili ·
+                                            30 kitob</div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">12 Dekabr, 2020 – 12:45</td>
+                                    <td class="border-b dark:border-dark-5"><a href="edit-courier.html">Ulugbek
+                                            Sobirov</a></td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-history.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2"
+                                                    data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1">
+                                    <td class="border-b dark:border-dark-5">1</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Arab tili ·
+                                            50 kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Rus tili · 40
+                                            kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Xitoy tili ·
+                                            30 kitob</div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">12 Dekabr, 2020 – 12:45</td>
+                                    <td class="border-b dark:border-dark-5"><a href="edit-courier.html">Ulugbek
+                                            Sobirov</a></td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-history.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2"
+                                                    data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-b dark:border-dark-5">1</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Arab tili ·
+                                            50 kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Rus tili · 40
+                                            kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Xitoy tili ·
+                                            30 kitob</div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">12 Dekabr, 2020 – 12:45</td>
+                                    <td class="border-b dark:border-dark-5"><a href="edit-courier.html">Ulugbek
+                                            Sobirov</a></td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-history.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2"
+                                                    data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1">
+                                    <td class="border-b dark:border-dark-5">1</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Arab tili ·
+                                            50 kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Rus tili · 40
+                                            kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Xitoy tili ·
+                                            30 kitob</div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">12 Dekabr, 2020 – 12:45</td>
+                                    <td class="border-b dark:border-dark-5"><a href="edit-courier.html">Ulugbek
+                                            Sobirov</a></td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-history.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2"
+                                                    data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-b dark:border-dark-5">1</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Arab tili ·
+                                            50 kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Rus tili · 40
+                                            kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Xitoy tili ·
+                                            30 kitob</div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">12 Dekabr, 2020 – 12:45</td>
+                                    <td class="border-b dark:border-dark-5"><a href="edit-courier.html">Ulugbek
+                                            Sobirov</a></td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-history.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2"
+                                                    data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-100 dark:bg-dark-1">
+                                    <td class="border-b dark:border-dark-5">1</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Arab tili ·
+                                            50 kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Rus tili · 40
+                                            kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Xitoy tili ·
+                                            30 kitob</div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">12 Dekabr, 2020 – 12:45</td>
+                                    <td class="border-b dark:border-dark-5"><a href="edit-courier.html">Ulugbek
+                                            Sobirov</a></td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-history.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2"
+                                                    data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-b dark:border-dark-5">1</td>
+                                    <td class="border-b dark:border-dark-5">
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Arab tili ·
+                                            50 kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Rus tili · 40
+                                            kitob</div>
+                                        <div class="select-handle-single my-3" data-key="3" data-group="#">Xitoy tili ·
+                                            30 kitob</div>
+                                    </td>
+                                    <td class="border-b dark:border-dark-5">12 Dekabr, 2020 – 12:45</td>
+                                    <td class="border-b dark:border-dark-5"><a href="edit-courier.html">Ulugbek
+                                            Sobirov</a></td>
+                                    <td class="border-b dark:border-dark-5">Toshkent</td>
+                                    <td class="border-b dark:border-dark-5 md:w-80">
+                                        <div class="flex items-center justify-center">
+                                            <a class="flex items-center mr-5" href="edit-history.html"> <i
+                                                    class="w-4 h-4 mr-2" data-feather="edit"></i> Ozgartirish </a>
+                                            <a class="flex items-center text-theme-6" href=""> <i class="w-4 h-4 mr-2"
+                                                    data-feather="trash-2"></i> O'chirish </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- BEGIN: Pagination -->
+                        <div class="intro-y flex flex-wrap sm:flex-row sm:flex-no-wrap items-center mt-6">
+                            <ul class="pagination">
+                                <li>
+                                    <a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-left w-4 h-4">
+                                            <polyline points="15 18 9 12 15 6"></polyline>
+                                        </svg> </a>
+                                </li>
+                                <li> <a class="pagination__link pagination__link--active" href="">1</a> </li>
+                                <li> <a class="pagination__link" href="">2</a> </li>
+                                <li> <a class="pagination__link" href="">3</a> </li>
+                                <li>
+                                    <a class="pagination__link" href=""> <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-right w-4 h-4">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg> </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END: Pagination -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Striped Rows -->
+    </div>
+    <!-- END: Content -->
+    <!-- BEGIN: JS Assets-->
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=[" your-google-map-api"]&libraries=places"></script>
+    <script src="dist/js/app.js"></script>
+    <!-- END: JS Assets-->
+</body>
+
+</html>
