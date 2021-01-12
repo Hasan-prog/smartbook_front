@@ -58,6 +58,9 @@
     border-radius: 0;
     width: 39px;
 }
+.product-select .product-select-empty .qty {
+    border-top-right-radius: 0.375rem;
+}
 .product-select .first-product-select .remove-product-select {
     border-top-right-radius: 0.375rem;
 }
